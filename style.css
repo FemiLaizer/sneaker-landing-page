@@ -1,0 +1,354 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.2rem solid #d14a4a; */
+  }
+
+.header-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 4rem;
+  width: 80%;
+}
+
+.header-box .sneakers {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 1em 0 0;
+}
+
+.header-box ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-box ul li {
+  list-style: none;
+}
+
+.header-box li a {
+  text-decoration: none;
+  margin: 0.3rem;
+  font-size: 0.8rem;
+  color: #575656;
+  transition: all 0.2s;
+}
+
+.header-box li a:hover{
+    color: #d14a4a;
+}
+
+.header-right-box{
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.header-right-box .cart-img .fa-shopping-cart{
+    font-size: 2rem;
+    color:#050505
+}
+
+.header-right-box #header-img{
+    height: 3rem;
+    width: 3rem;
+    box-shadow: 0.2rem 0.3rem 0.5rem solid #3a3a3a;
+    border-radius: 50%;
+    margin-left: 0.38em;
+    background-image: url(./img/me-in-vneck.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.2s;
+}
+
+.thin-line{
+    width: 80%;
+    height: 0.08rem;
+    background-color: #eeeded;
+}
+
+.section-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.picture-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 350px;
+}
+
+.picture-div .big-image{
+    margin: 0 auto;
+    border-radius: 1rem;
+    height: 75%;
+    width: 75%;
+    background-image: url(./img/photo-sneaker.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.2s;
+}
+.small-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 75%;
+}
+.small-images img{
+    height: 60%;
+    width: 20%;
+    border: 0.18rem solid #d14a4a;
+    border-radius: 0.5rem;
+    margin: 0.38em;
+    transition: all 0.2s;
+}
+.small-images img:hover{ 
+    border: 0.18rem solid #faece7;
+    transform: scale(1.1);
+    box-shadow: 35px 25px 35px 40px solid #050505;
+}
+.details-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 450px;
+    width: 350px;
+}
+
+.details-div #sneaker-comp{
+    font-size: 0.72rem;
+    margin: 4rem 0 1rem 0;
+    color: #d14a4a;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+}
+.details-div h3{
+    font-size: 2rem;
+    color: #1d1d1d;
+}
+.details-div .note{
+    margin: 1rem 0;
+    font-size: 0.78rem;
+    line-height: 1.3rem;
+    color: #807f7f;
+    font-weight: 500;
+}
+.details-div h4{
+    display: flex;
+    font-size: 1.25rem;
+    color: #1d1d1d;
+    font-weight: 700;
+    align-items: center;
+}
+
+.details-div .discount span{
+    margin: 0 1.2rem;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    color: #d14c4c;
+    font-weight: 800;
+    margin-left: 1.5rem;
+}
+
+.details-div #slashed{
+    margin: 0.2rem 0;
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+    color: #a09e9e;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+.details-div .btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+    /* border: 0.2rem solid #c93c09; */
+}
+.details-div .btn button{
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+    color: #faf8f8;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    background-color: #ce2525;
+    height: 2.5rem;
+    width: 12rem;
+    letter-spacing: 0.05rem;
+    margin-right: 2rem;
+}
+
+.details-div .btn span{
+    margin: 0 1.2rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color: #222222;
+    font-weight: 700;
+}
+
+.details-div .btn span:first-child{
+    font-size: 1.5rem;
+}
+
+.details-div .btn span:first-child,
+.details-div .btn span:nth-child(3){
+    color: #ce2525;
+}
+
+.details-div .btn button:hover{
+    background-color: #d14a4a;
+}
+
+.small-images img,
+.details-div .btn button,
+.header-box li a,
+.header-right-box #header-img,
+.header-box .sneakers,
+.details-div .btn span
+{
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .section-box{
+        flex-direction: column;
+    }
+
+    .header-box .sneakers {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0 .3em 0 0;
+    }
+
+    .header-right-box #header-img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .header-box li a {
+        margin: 0.3rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width:480px){
+    .header-box .sneakers {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0 .1em 0 0;
+    }
+
+    .header-right-box #header-img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .header-box li a {
+        margin: 0.3rem;
+        font-size: 0.7rem;
+    }
+
+    .picture-div{
+        height: 350px;
+        width: 320px;
+    }
+
+    .small-images img{
+        height: 55%;
+        width: 18%;
+    }
+
+    .details-div{
+        height: 400px;
+        width: 270px;
+        text-align: left;
+    }
+
+    .details-div h3{
+        font-size: 1.2rem;
+    }
+
+    .details-div .btn button{
+        width: 8rem;
+    }
+
+    .details-div .btn span{
+        margin: 0 .8rem;
+    }
+}
+
+@media(max-width:320px){
+    .header-box {
+        flex-direction: column;
+    }
+    .header-box ul{
+        flex-direction: column;
+      }
+
+    .picture-div{
+        height: 320px;
+        width: 270px;
+    }
+
+    .small-images img{
+        height: 55%;
+        width: 18%;
+    }
+
+    .header-right-box #header-img{
+        margin-left: -253px;
+        margin-bottom: 10px;
+    }
+
+    .details-div h3{
+        font-size: 1rem;
+        padding: 0 21px 0 10px;
+    }
+
+    .details-div p{
+        padding: 0 21px 0 10px;
+    }
+
+    .details-div .discount{
+        padding: 0 21px 0 10px;
+    }
+
+    .details-div #sneaker-comp{
+        font-size: 0.7rem;
+        margin-left: 10px;
+    }
+}
