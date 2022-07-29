@@ -102,13 +102,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid #fdae91; */
     height: 450px;
     width: 350px;
 }
-div:nth-child(1) {
-    margin-right: 2rem;
-}
+
 .picture-div .big-image{
     margin: 0 auto;
     border-radius: 1rem;
@@ -144,7 +141,6 @@ div:nth-child(1) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* border: 2px solid #fdae91; */
     height: 450px;
     width: 350px;
 }
@@ -245,4 +241,114 @@ div:nth-child(1) {
 .details-div .btn span
 {
     cursor: pointer;
+}
+
+@media(max-width:768px){
+    .section-box{
+        flex-direction: column;
+    }
+
+    .header-box .sneakers {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0 .3em 0 0;
+    }
+
+    .header-right-box #header-img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .header-box li a {
+        margin: 0.3rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width:480px){
+    .header-box .sneakers {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0 .1em 0 0;
+    }
+
+    .header-right-box #header-img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .header-box li a {
+        margin: 0.3rem;
+        font-size: 0.7rem;
+    }
+
+    .picture-div{
+        height: 350px;
+        width: 320px;
+    }
+
+    .small-images img{
+        height: 55%;
+        width: 18%;
+    }
+
+    .details-div{
+        height: 400px;
+        width: 270px;
+        text-align: left;
+    }
+
+    .details-div h3{
+        font-size: 1.2rem;
+    }
+
+    .details-div .btn button{
+        width: 8rem;
+    }
+
+    .details-div .btn span{
+        margin: 0 .8rem;
+    }
+}
+
+@media(max-width:320px){
+    .header-box {
+        flex-direction: column;
+    }
+    .header-box ul{
+        flex-direction: column;
+      }
+
+    .picture-div{
+        height: 320px;
+        width: 270px;
+    }
+
+    .small-images img{
+        height: 55%;
+        width: 18%;
+    }
+
+    .header-right-box #header-img{
+        margin-left: -253px;
+        margin-bottom: 10px;
+    }
+
+    .details-div h3{
+        font-size: 1rem;
+        padding: 0 21px 0 10px;
+    }
+
+    .details-div p{
+        padding: 0 21px 0 10px;
+    }
+
+    .details-div .discount{
+        padding: 0 21px 0 10px;
+    }
+
+    .details-div #sneaker-comp{
+        font-size: 0.7rem;
+        margin-left: 10px;
+    }
 }
